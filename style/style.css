@@ -8,17 +8,18 @@ body {
 }
 header{
     min-height: 250px;
-    background-color: blue;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: url(/assets/banner.jpeg);
+    align-items: center; 
     background-size: cover;
     background-position: center;
     position: relative;
     
+}
+.home-page header, .new-post-page header{
+    background-image: url(/assets/banner.jpeg);
 }
 header > *{
     z-index: 10;
@@ -41,7 +42,7 @@ header::after{
     background-image: url(/assets/1st.png);
     background-size: cover;
 }
-.profile-name{
+.profile-name,.title{
     font-size: 3em;
     font-weight: bold;
 }
@@ -93,7 +94,6 @@ footer {
 }
 .post-img{
     flex-basis: 40%;
-    background-image: url(https://images.unsplash.com/photo-1581094651181-35942459ef62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
     background-position: center;
     
@@ -101,6 +101,7 @@ footer {
 .post-content{
     flex-basis: 60%;
     padding: 24px;
+    color: #333;
 }
 .post-date{
     font-size: 14px;
@@ -141,7 +142,7 @@ footer {
 }
 .nav-button.new-post-button:hover{
     background-color: #002341;
-    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.1); */
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.1); 
 }
 .navigation a{
     text-decoration: none;
@@ -150,4 +151,7 @@ footer {
     padding: 5px 8px;
     border-radius: 5px;
     
+}
+a.post-link{
+    text-decoration: none;
 }
